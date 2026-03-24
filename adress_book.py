@@ -74,13 +74,13 @@ def edit():
     Email_text.insert(0,deatils["Email"])
 
     Birthday_text.delete(0,END)
-    Birthday_text.insert(0,deatils["details"])
+    Birthday_text.insert(0,deatils["Birthday"])
 
 def deletes():
     selection = Output_listbox_thingy.curselection()
     
     if not selection:
-        messagebox.showwarning("Error!!","you are a stupid idiot for not slecting. you have to select the person you stupid idiot",)
+        messagebox.showwarning("Error!!","you are a stupid idiot for not selecting. you have to select the person you stupid idiot",)
         
         return
     name = Output_listbox_thingy.get(selection[0])
